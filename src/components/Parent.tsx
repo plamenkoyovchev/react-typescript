@@ -4,7 +4,7 @@ import { Child } from "./Child";
 const Parent = () => {
   return (
     <div>
-      <Child color="red" />
+      <Child color="red" onClick={() => {}} />
     </div>
   );
 };
