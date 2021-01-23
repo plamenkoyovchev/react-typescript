@@ -13,7 +13,7 @@ const initialState: RepositoriesState = {
     loading: false
 };
 
-export const reducer = (state: RepositoriesState = initialState, action: Action) => {
+const repositoriesReducer = (state: RepositoriesState = initialState, action: Action) => {
     switch (action.type) {
         case ActionType.SEARCH_REPOSITORIES:
             return {
@@ -40,3 +40,5 @@ export const reducer = (state: RepositoriesState = initialState, action: Action)
             return state;
     }
 }
+
+export default repositoriesReducer;
